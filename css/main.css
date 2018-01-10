@@ -10,7 +10,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   box-sizing: border-box;
-  font: normal 100%/1.3 sans-serif;
+  font: bold 100%/1.3 sans-serif;
 }
 
 *, *::before, *::after {
@@ -23,10 +23,10 @@ body {
 
 header {
   background-color: #18294f;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: buntu, sans-serif;
 }
 
-h1 {
+header h1 {
   color: #fff;
   font-size: 2rem;
   text-align: center;
@@ -34,23 +34,53 @@ h1 {
   padding: .3em 0 .5em;
 }
 
-header ul {
+nav ul {
   padding: .5em 0;
   margin: 0;
 }
 
-header li {
+nav li {
   list-style-type: none;
   padding: .5em .75em;
 }
 
-header a {
+nav a {
   color: #6c8fe0;
   text-decoration: none;
   font-size: 1.125rem;
 }
 
-header a:hover {
+nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  nav li {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    text-align: center;
+  }
+
+  header {
+    overflow: hidden;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  nav li {
+    display: inline-block;
+    width: 25%;
+    float: left;
+
+  }
+
+  header {
+    overflow: hidden;
+  }
+
 }
