@@ -24,10 +24,10 @@ body {
 header {
   background-color: #18294f;
   font-family: buntu, sans-serif;
+  color: #fff;
 }
 
 header h1 {
-  color: #fff;
   font-size: 2rem;
   text-align: center;
   margin: 0;
@@ -72,15 +72,44 @@ nav a:hover {
 
 @media only screen and (min-width: 38em) {
 
+  html {
+    line-height: 1.4;
+    font-size: 110%;
+  }
+
   nav li {
     display: inline-block;
     width: 25%;
     float: left;
-
   }
 
   header {
     overflow: hidden;
   }
 
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    line-height: 1.5;
+    font-size: 120%;
+  }
+
+  h1 {
+    float: left;
+  }
+
+  nav li {
+    display: block;
+    width: 25%;
+    float: right;
+  }
+
+  @media only screen and (min-width: 90em) {
+
+    html {
+      line-height: 1.5;
+      font-size: 130%;
+    }
 }
